@@ -12,7 +12,12 @@
 
 > No. An end to end test is meant to emulate user actions to ensure all kinds of tasks and actions are working as expected, instead of checking a single function's output.
 
+3) Would you use a unit test to test the “message” feature of a messaging application? Why or why not? For this question, assume the “message” feature allows a user to write and send a message to another user.
 
+> No. Unit testing is for debugging a small scale of the code, like a function. It's not suitable for testing interactions on a feature level like this 'message' feature.
 
+4) Would you use a unit test to test the “max message length” feature of a messaging application? Why or why not? For this question, assume the “max message length” feature prevents the user from typing more than 80 characters.
+
+> Yes. In this case, we are testing a small functionality: limit the max message length. Unit testing is great for testing this kind of small scale without affecting unrelated unit tests.
 
 
