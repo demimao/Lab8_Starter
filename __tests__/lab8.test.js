@@ -115,7 +115,7 @@ describe('Basic user flow for Website', () => {
 
   // Check to make sure that the cart in localStorage is what you expect
   it('Checking the localStorage to make sure cart is correct', async () => {
-    // TODO - Step 5
+    // DONE - Step 5
     // At this point he item 'cart' in localStorage should be 
     // '[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]', check to make sure it is
     console.log('Checking cart in the localStorage');
@@ -128,7 +128,7 @@ describe('Basic user flow for Website', () => {
   // number in the top right of the screen is 0
   it('Checking number of items in cart on screen after removing from cart', async () => {
     console.log('Checking number of items in cart on screen...');
-    // TODO - Step 6
+    // DONE - Step 6
     // Go through and click "Remove from Cart" on every single <product-item>, just like above.
     // Once you have, check to make sure that #cart-count is now 0
     const prodItems = await page.$$('product-item');
@@ -176,7 +176,7 @@ describe('Basic user flow for Website', () => {
   // cart being empty
   it('Checking the localStorage to make sure cart is correct', async () => {
     console.log('Checking the localStorage...');
-    // TODO - Step 8
+    // DONE - Step 8
     // At this point he item 'cart' in localStorage should be '[]', check to make sure it is
     const cart = await page.evaluate(() => window.localStorage.getItem('cart'));
     expect(cart).toBe('[]');
